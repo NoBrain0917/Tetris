@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>테트리스</title>
+    <meta charset="UTF-8">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta property="og:image" content="./img/images.png">
+    <meta property="og:description" content="테트리스 플레이하기"/>
+    <meta property="og:title" content="테트리스"/>
+    <meta name="twitter:image" content="./img/images.png">
+    <link rel="stylesheet" href="./css/tetris.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+  </head>
+  <script src="./js/fuxkingIE.js"></script>
+  <body>
+    <div class="best-title">Best Score</div>
+    <div class="best">0</div>
+    <div class="score-title">Score</div>
+    <div class="score">0</div>
+    <div class="line-title">Line</div>
+    <div class="line">0</div>
+    <div class="next">Next</div>
+    <div class="made">ⓒ 2020 원당중 코딩부</div>
+    <canvas width="320" height="640" id="game"></canvas>
+  </body>
+  <canvas id="next" width="150" height="150" style='margin-left:177px;margin-top: 300px;'></canvas>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./js/howler.min.js"></script>
+  <script src="./js/AI.js"></script>
+  <script src="./js/tetris.js"></script>
+  <script src="./js/playSound.js"></script>
+</html>
