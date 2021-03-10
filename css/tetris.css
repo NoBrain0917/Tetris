@@ -1,0 +1,157 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .gray {
+    filter:grayscale(100);
+  }
+
+.best-title {
+    position: absolute;
+    margin:10px auto;
+    font-weight: bold;
+    z-index:1;
+    margin-bottom: 500px;
+    margin-left: 500px;
+    font-size:30px;
+    text-align: center;
+    font-family: dotFont;
+    color:#ffffff;
+  }
+
+  .best {
+    position: absolute;
+    margin:10px auto;
+    font-weight: bold;
+    z-index:1;
+    margin-bottom: 420px;
+    margin-left: 500px;
+    font-size:20px;
+    text-align: center;
+    font-family: dotFont;
+    color:#ffffff;
+  }
+
+.score-title {
+  position: absolute;
+  margin:10px auto;
+  font-weight: bold;
+  z-index:1;
+  margin-bottom: 300px;
+  margin-left: 500px;
+  font-size:30px;
+  text-align: center;
+  font-family: dotFont;
+  color:#ffffff;
+}
+
+.line-title {
+  position: absolute;
+  margin:10px auto;
+  font-weight: bold;
+  z-index:1;
+  margin-bottom: 100px;
+  margin-left: 500px;
+  font-size:30px;
+  text-align: center;
+  font-family: dotFont;
+  color:#ffffff;
+}
+
+.line {
+  position: absolute;
+  margin:10px auto;
+  font-weight: bold;
+  z-index:1;
+  margin-bottom: 20px;
+  margin-left: 500px;
+  font-size:20px;
+  text-align: center;
+  font-family: dotFont;
+  color:#ffffff;
+}
+
+.next {
+  position: absolute;
+  margin:10px auto;
+  font-weight: bold;
+  z-index:1;
+  margin-top: 80px;
+  margin-left: 500px;
+  font-size:30px;
+  text-align: center;
+  font-family: dotFont;
+  color:#ffffff;
+}
+
+.made {
+  position: absolute;
+  z-index:1;
+  margin:10px auto;
+  margin-top: 800px;
+  font-size:18px;
+  font-family: maplestory;
+  text-align: center;
+  color:#ffffff;
+}
+
+
+
+.score {
+  position: absolute;
+  font-weight: bold;
+  z-index:1;
+  margin:10px auto;
+  margin-bottom: 220px;
+  margin-left: 500px;
+  font-size:20px;
+  text-align: right;
+  font-family: dotFont;
+  color:#ffffff;
+}
+
+body {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+canvas {
+    border: 1px solid white;
+}
+
+@font-face {
+  font-family: 'dotFont';
+  src: url("/font/dotFont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'maplestory';
+  src: url("/font/maplestory.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.animated_rainbow {
+  position: absolute;
+  z-index:1;
+  margin:10px auto;
+  margin-top: 800px;
+  font-size:18px;
+  font-family: maplestory;
+  text-align: center;
+	background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+  -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+	background-clip: text;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+}
+
+@keyframes animatedBackground_a {
+	0% { background-position: 0 0 }
+	100% { background-position: -500px 0 }
+}
