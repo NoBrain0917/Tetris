@@ -9,6 +9,7 @@ let isM = false;
 let isMute = false;
 let isRemix = false;
 let BotOn = false;
+let bestScore = 0;
 
 
 getRandomInt = function(min, max) {
@@ -323,6 +324,11 @@ showGameOver = function() {
     isRemix = false;
     isMute = false;
     if($("body").hasClass("gray")) $("body").removeClass("gray")
+    
+    if(bestScore<varscore) {
+        bestScore = varscore;
+    $(".best").html(bestScore)
+    }
 
 
     context.fillStyle = 'black';
@@ -716,8 +722,6 @@ document.addEventListener('keydown', function(e) {
     rAF = requestAnimationFrame(loop);
     nextTetr = getNextTetromino();
     showNextTetr();
-
-    Object.defineProperty(console, '_commandLineAPI', { get : function() { throw '콘솔을 사용할 수 없습니다.' } });
 
 console.log("하하 호호 이스터에그");
 
