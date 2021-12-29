@@ -126,14 +126,14 @@ canvas {
 
 @font-face {
   font-family: 'dotFont';
-  /*src: url("https://raw.githubusercontent.com/NoBrain0917/Tetris/main/dotFont.ttf");*/
+  src: url("https://raw.githubusercontent.com/NoBrain0917/Tetris/main/dotFont.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'maplestory';
-  /*src: url("https://raw.githubusercontent.com/NoBrain0917/Tetris/main/maplestory.ttf");*/
+  src: url("https://raw.githubusercontent.com/NoBrain0917/Tetris/main/maplestory.ttf");
   font-weight: normal;
   font-style: normal;
 }
