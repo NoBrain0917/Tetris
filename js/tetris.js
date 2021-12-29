@@ -325,33 +325,6 @@ showGameOver = function() {
     if($("body").hasClass("gray")) $("body").removeClass("gray")
 
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/getScore", true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send();
-    xhr.onload = function() {
-        var data = JSON.parse(this.responseText);
-        let bestScore = data.score;
-        if(data.rank!="none") $(".best-title").html(`#${data.rank}.  Best Score`);
-        if(bestScore<varscore) {
-            if(isM) return;
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST","/setScore",true)
-            xhttp.setRequestHeader('Content-Type', 'application/json');
-            xhttp.send(JSON.stringify({
-                score: Number(varscore).toString(32)
-            }));
-            xhttp.onload = function(){
-                var data = JSON.parse(this.responseText);
-                if(data.rank!="none") $(".best-title").html(`#${data.rank}.  Best Score`);
-                $(".best").html(`${varscore}${data.next!="none"? "   ("+data.next+")":""}`)
-            }
-        }
-        
-        
-    }
-
-
     context.fillStyle = 'black';
     context.globalAlpha = 0.75;
     context.fillRect(0, canvas.height / 2 - 30, canvas.width, 60 + 30);
@@ -683,6 +656,13 @@ document.addEventListener('keydown', function(e) {
         }
         kw=""
     }
+        if(kw.indexOf("auto")!=-1) {
+        if(!BotOn) {
+            BotOn = true;
+            aiTest();
+        }
+        kw=""
+    }
 
     if (e.which === 37 || e.which === 39||e.key === "a"||e.key==="d") {
         const col = e.which === 37||e.key === "a"
@@ -733,18 +713,6 @@ document.addEventListener('keydown', function(e) {
 
 
 
-var xhr = new XMLHttpRequest();
-xhr.open("POST", "/getScore", true);
-xhr.setRequestHeader('Content-Type', 'application/json');
-xhr.send();
-xhr.onload = function() {
-    var data = JSON.parse(this.responseText);
-    let bestScore = data.score;
-    
-    $(".best").html(`${bestScore}${data.next!="none"? "   ("+data.next+")":""}`)
-    if(data.rank!="none") $(".best-title").html(`#${data.rank}.  Best Score`);
-    if(bestScore>10000) $(".made").html("ⓒ 10000 원당중 코딩부.")
-}
     rAF = requestAnimationFrame(loop);
     nextTetr = getNextTetromino();
     showNextTetr();
