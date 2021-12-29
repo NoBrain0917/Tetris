@@ -3,12 +3,6 @@ const A = -3.78;
 const B = -8.8;
 const C = -0.59;
 const D = 8.2;
-/*
-const A = -0.510066
-const B = -0.35663
-const C = -0.184483
-const D = 7.60666
-*/
 const E = 3.7;
 const F = 2.5;
 const G = 4.0;
