@@ -1,5 +1,10 @@
 # Tetris
-AI  테스트용
+일반적인 테트리스와 똑같음     
+`auto`를 입력하면 AI가 켜짐   
+    
+Same as regular Tetris     
+Type `auto` to turn on AI
+
 
 [여기서](https://nobrain0917.github.io/Tetris/) 게임 가능<br>
-F12 눌러 콘솔창에서 `aiTest()` 입력하면 ai 가능
+[here](https://nobrain0917.github.io/Tetris/) game available<br>
