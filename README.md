@@ -3,7 +3,9 @@
 `auto`를 입력하면 AI가 켜짐   
 
 [여기서](https://nobrain0917.github.io/Tetris/) 게임 가능<br>
-    
+
+***
+   
 Same as regular Tetris     
 Type `auto` to turn on AI
 
